@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { useColorScheme } from "react-native";
+
+import BooksView from "./presentation/books/index";
+
+import { ThemeProvider } from "styled-components";
+import design_system from "./design_system";
+import { DSNavigation, DSNavigator, DSNavigationLink } from "./design_system/components/navigations/dsNavigations";
+import StackComponent from "./routes/stack";
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return <StackComponent />;
+};
