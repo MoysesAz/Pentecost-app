@@ -38,7 +38,7 @@ export default function VersesView({route, navigation}: NativeStackScreenProps<S
                     />
                 </DSBackground>
     );
-};
+};  
 
 export const Flag = styled(DSTexts.Body)(props => ({
     paddingRight: 20
